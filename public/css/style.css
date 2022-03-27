@@ -1,0 +1,44 @@
+body {
+    text-align: center;
+}
+
+form {
+    border: 5px solid black;
+    width: fit-content;
+    margin: 0 auto;
+    border-radius: 8px;
+}
+
+button {
+    border: none;
+    cursor: pointer;
+}
+
+table , tr, th, td {
+    border: 1px solid white;
+    border-collapse: collapse;
+}
+
+th {
+    background-color: black;
+    color: white;
+}
+
+tr:nth-child(even) {
+    background-color: red;
+    color: white;
+}
+
+tr:nth-child(odd) {
+    background-color: green;
+    color: white;
+}
+
+th, td {
+    padding: 5px;
+    text-align: center;
+}
+
+img {
+    width: 500px;
+}

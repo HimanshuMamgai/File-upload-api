@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>File upload in Node.js</title>
+    <link rel="stylesheet" href="css/style.css" type="text/css">
+</head>
+<body>
+   <table>
+    <tr>
+        <th>SNo.</th>
+        <th>Name</th>
+        <th>Description</th>
+        <th>Quantity</th>
+        <th>Price</th>
+    </tr>
+    <% fileData.map((result, index) => { %>
+    <tr>
+        <td><%= index %></td>
+        <td><%= result.Series_reference %></td>
+        <td><%= result.Period %></td>
+        <td><%= result.Data_value %></td>
+        <td><%= result.UNITS %></td>
+    </tr>   
+    <% }); %>
+</table>
+</body>
+</html>
